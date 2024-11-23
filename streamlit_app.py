@@ -19,8 +19,8 @@ if st.button("生成讨论内容"):
             }
             payload = {
                 "messages": [
-                    {"role": "system", "content": "You are a helpful assistant specialized in generating AMA topics."},
-                    {"role": "user", "content": f"Generate detailed talking points for the AMA topic: {topic}"}
+                    {"role": "system", "content": ""},
+                    {"role": "user", "content": f"{topic}"}
                 ],
                 "model": "grok-beta",
                 "stream": False,
